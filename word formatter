@@ -1,0 +1,21 @@
+Sub BreakDoiLinks()
+    If Selection.Type = wdSelectionIP Then
+        MsgBox "Blok dulu daftar pustakanya."
+        Exit Sub
+    End If
+    With Selection.Find
+        .ClearFormatting
+        .Replacement.ClearFormatting
+        .Format = False
+        .MatchWildcards = False
+        .Wrap = wdFindStop
+        ' hapus ZWSP lama biar tidak dobel
+        .Text = ChrW(8203)
+        .Replacement.Text = ""
+        .Execute Replace:=wdReplaceAll
+        ' sisipkan titik putus setelah slash
+        .Text = "/"
+        .Replacement.Text = "/" & ChrW(8203)
+        .Execute Replace:=wdReplaceAll
+    End With
+End Sub
