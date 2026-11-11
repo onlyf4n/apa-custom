@@ -1,48 +1,45 @@
 # APA 7th Custom (CSL)
 
-Style sitasi **APA 7th edition** yang dimodifikasi untuk Mendeley Cite. Dasarnya adalah `apa.csl` resmi dari [citation-style-language/styles](https://github.com/citation-style-language/styles).
+A modified **APA 7th edition** citation style for Mendeley Cite. It is based on the official `apa.csl` from [citation-style-language/styles](https://github.com/citation-style-language/styles).
 
-## Perbedaan dengan APA 7th asli
+## Differences from the original APA 7th
 
-Perubahan hanya pada pemformatan huruf miring di daftar pustaka untuk artikel jurnal:
+Only the italic formatting of journal articles in the reference list is changed:
 
-| Elemen | APA 7th asli | APA 7th Custom |
+| Element | Original APA 7th | APA 7th Custom |
 |---|---|---|
-| Judul artikel | Normal | *Miring* |
-| Nama jurnal | *Miring* | Normal |
-| Volume | *Miring* | Normal |
+| Article title | Normal | *Italic* |
+| Journal name | *Italic* | Normal |
+| Volume | *Italic* | Normal |
 
-Contoh hasil:
+Example output:
 
-```
-Nurhasanah, N., Rafi, M. Y., & Rosyani, P. (2023). *Keamanan Data Menggunakan Teknik Steganografi*. Jurnal Jaringan Sistem Informasi Robotik, 7(2), 232–240. https://doi.org/10.58486/jsr.v7i2.300
-```
+> Doe, J., Smith, A. B., & Lee, C. (2024). *An Example Title of a Journal Article*. Journal of Example Studies, 12(3), 45–67. https://doi.org/10.0000/example.2024.001
 
-Sitasi dalam teks, urutan unsur, dan aturan lainnya tidak diubah.
+In-text citations, element order, and all other rules are unchanged.
 
-## Cara pakai di Mendeley Cite
+## Usage in Mendeley Cite
 
-1. Salin URL Raw file style ini:
+1. Copy the raw URL of the style file:
    ```
-   https://raw.githubusercontent.com/onlyf4n/csl-styles/main/apa-custom.csl
+   https://raw.githubusercontent.com/onlyf4n/apa-custom/main/apa-custom.csl
    ```
-   (sesuaikan `onlyf4n` dan `csl-styles` kalau username atau nama repo berbeda)
-2. Di Word, buka tab **Mendeley Cite** lalu klik **Citation Style**.
-3. Pilih **More Styles** dan cari opsi menambahkan style lewat URL (*Add custom style*). Nama menu bisa berbeda tergantung versi.
-4. Tempel URL tadi, lalu pilih **APA 7th Custom**.
-5. Klik **Refresh** supaya daftar pustaka menyesuaikan.
+2. In Word, open the **Mendeley Cite** tab and click **Citation Style**.
+3. Choose **More Styles** and look for the option to add a style from a URL (*Add custom style*). The menu name may vary by version.
+4. Paste the URL, then select **APA 7th Custom**.
+5. Click **Refresh** to update the bibliography.
 
-## Cara pakai di Zotero
+## Usage in Zotero
 
-1. Unduh `apa-custom.csl`.
-2. Buka **Edit → Settings → Cite → Styles → +** dan pilih file tersebut.
+1. Download `apa-custom.csl`.
+2. Go to **Edit → Settings → Cite → Styles → +** and select the file.
 
-## Catatan
+## Notes
 
-- Repositori ini harus **Public**, kalau tidak Mendeley tidak bisa membaca file-nya.
-- Setiap kali file `.csl` diubah dan di-commit, klik **Refresh** di Mendeley Cite. Kalau tampilan belum berubah, pilih ulang style-nya.
-- Hyphenation otomatis dan pemotongan link DOI di akhir baris diatur di Word, bukan di file style ini.
+- The repository must be **public**, otherwise Mendeley cannot read the file.
+- After editing and committing the `.csl` file, click **Refresh** in Mendeley Cite. If nothing changes, reselect the style.
+- Automatic hyphenation and DOI line breaking are handled in Word, not by this style file.
 
-## Lisensi
+## License
 
-Turunan dari APA Style 7th edition oleh Brenton M. Wiernik dan Andrew Dunning, dilisensikan di bawah [Creative Commons Attribution-ShareAlike 3.0](http://creativecommons.org/licenses/by-sa/3.0/). Karena lisensinya ShareAlike, file turunan ini memakai lisensi yang sama.
+Derived from APA Style 7th edition by Brenton M. Wiernik and Andrew Dunning, licensed under [Creative Commons Attribution-ShareAlike 3.0](http://creativecommons.org/licenses/by-sa/3.0/). As the license is ShareAlike, this derivative uses the same license.
